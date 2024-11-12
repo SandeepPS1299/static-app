@@ -1,7 +1,7 @@
 (function (w, d) {
   // Check if widget options exist and get mode
   const widgetOptions = w.finiWidgetOptions || { mode: "widget" };
-  const mode = "searchbar";
+  const mode = widgetOptions.mode || "widget";
   const widgetId = widgetOptions.widgetId || "default";
 
   // Create widget styles with mode-specific variations
